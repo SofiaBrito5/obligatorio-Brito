@@ -1,0 +1,588 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');    
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+        text-decoration: none;
+    }
+
+    :root{
+        --flotante: #c79c27;
+        --lila: #b095c9;
+        --verdoso: rgb(9, 44, 0);
+        --naranjita: rgb(211, 99, 8);
+        --gradienttaylor:linear-gradient(120deg, #ffd1dc 0%, #ffe3b3 50%, #fbd0ff 100%);
+    }
+    
+    #inicio{
+        height: 60vh;
+        background-image: url(img/outfitsimg.png);
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo{
+
+      width: 40%;
+
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #banner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2em;
+        text-align: center;
+
+    }
+
+    header{
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    h1{
+        font-size: 4em;
+        margin-bottom: 1em;
+        color: white;
+        font-weight: 500;  
+    }
+
+    #cosoflotante{
+        background-color: var(--naranjita);
+        border-radius: 30px;
+        padding: 2em 1em;
+        margin: 3em 1em;
+        color: white;
+        text-align: center;
+    }
+
+    #cosoflotante h2{
+        font-size: 2em;
+    }
+
+    #cosoflotante p{
+        font-size: 20px;
+        margin: 0.5em;
+        
+    }
+
+    #cosoflotante input, select{
+        width: 90%;
+        padding: 1em;
+        margin-top: 1em;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    #cosoflotante button{
+        display: inline-block;
+        background-color: rgb(255, 160, 83);
+        color: white;
+        padding: 0.75em;
+        border: none;
+        border-radius: 30px;
+        width: 90%;
+        margin: 1em 0em 0em 0em;
+        font-size: 1em;
+        font-weight: bold;
+        position: static;
+        cursor: pointer;
+    }
+
+    #fotos article{
+        height: 50vh;
+    }
+
+    #noticiaoutfits{
+        background-image: url(img/outfitsimg.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    #noticiaoutfits a{
+        display: inline-block;
+        background-color: var(--naranjita);
+        color: white;
+        padding: 0.75em;
+        border: none;
+        border-radius: 30px;
+        margin-top: 1em;
+        font-size: 1em;
+        font-weight: bold;
+        width: 40%;
+        text-align: center;
+    }
+
+    #noticiaoutfits h2{
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        justify-content: center;
+        margin: 0em 1em;
+    }
+
+
+    #outfitgrid2{
+        background-image: url(img/outfitsgrid2.png);
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #outfitgrid3{
+        background-image: url(img/outfitsgrid3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #taypost{
+        background-image: url(img/taylorken.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #redoutfit{
+        display: none;
+    }
+
+    #outfits{
+border : 7px solid var(--naranjita);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+background: var(--gradienttaylor)
+    }
+    #outfits div{
+      border-bottom: 10px double var(--naranjita);
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    #outfits h2{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        
+    }
+
+    #outfits p{
+        text-align: justify;
+        margin: 0em 1em;
+        color: black;
+        font-weight: 600;
+    }
+
+    #secgrid h2{
+        font-size: 3em;
+        margin-top: 2em;
+        text-align: center;
+        color: var(--naranjita);
+    }
+.etiqueta{
+  display: none;
+}
+    .artconimg{
+        border: 2px solid var(--flotante);
+        border-radius: 16px;
+        padding: 2em;
+        margin: 3em 1em 0em 1em;
+        text-align: center;
+    }
+
+    .artconimg img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .artconimg h3{
+        font-size: 1.3em;
+        
+        color: rgb(0, 0, 0);
+    }
+
+    .artconimg p{
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        margin: 0.5em 0 1em;
+    }
+
+    .artconimg a{
+        display: inline-block;
+        margin-top: 0.25em;
+        border: 2px solid var(--flotante);
+        border-radius: 50px;
+        padding: 0.5em 2em;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1em;
+        color: var(--rojomet);
+    }
+
+    .imgapagada{
+      display: none;
+    }
+
+    .textobanner{
+        display: none;
+    }
+
+    footer{
+        background-color: beige;
+        padding: 2em;
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+
+    footer a{
+        display: inline-block;
+        margin: 0em 0.2em;
+    }
+
+    footer img{
+        width: 35px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div{
+        margin-top: 0.5em;
+    }
+
+
+
+
+    /* TABLET */
+    @media all and (min-width:768px){
+        #burger{
+            display: none;
+        }
+
+        #logo{
+          width: 80%;
+        }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+header nav {
+  display: flex;
+  gap: 1em; /* espacio entre los links */
+}
+
+header nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: var(--naranjita);
+  border-radius: 5px;
+padding: 15px 30px;
+}
+
+        nav a{
+            color: white;
+            font-weight: 500;
+            margin: 0 0.7em;
+        }
+
+        main{
+            font-size: 1.2em;
+        }
+        #cosoflotante input, select {
+            width: 35%;
+            margin-left: 0.5em;
+        }
+
+        #cosoflotante button{
+            width: 25%;
+            margin-left: 0.5em;
+        }
+
+        #redoutfit{
+            display: block;
+            background-image: url(img/redoutfit.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+
+        #fotos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+#fotos #noticiaoutfits{
+          height: 100%;
+          grid-row: span 2;
+        }
+        #fotos article{
+            height: 40vh;
+        }
+
+        #outfits{
+            grid-column: span 2;
+        }
+
+
+        #grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        #debut, #red, #reput{
+            grid-row: span 2;
+        }
+
+        #merch, #vinilos{
+            grid-row: span 1;
+        }
+
+        .artconimg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1.5em;
+        }
+
+
+        #noticiaoutfits a{
+            font-size: 1.2em;
+            
+        }
+
+        #outfits div{
+            width: 100%;
+        }
+
+        #outfits p{
+            margin: 0em 7em;
+        }
+        
+        #banner{
+            align-items: flex-end;
+            text-align: left;
+            justify-content: flex-start;
+        }
+        
+        footer{
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        footer div{
+            margin-left: 2em;
+        }
+    }
+
+
+
+    /* LAPTOP */
+    @media all and (min-width:1200px){
+        h1{
+            margin-bottom: 0.2em;
+        }
+
+        #logo{
+          width: 20%;
+        }
+
+       header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5em; /* espacio entre los links */
+}
+
+header nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+
+        #banner{
+          font-size: large;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            margin: 5em;
+        }
+
+        #banner p{
+          font-weight: 700;
+            display: block;
+            color: white;
+        }
+
+        body{
+            position: relative;
+        }
+
+        #cosoflotante{
+            position: absolute;
+            top: 150px;
+            right: 100px;
+            width: 25%;
+            font-size: 0.7em;
+        }
+
+        #cosoflotante p{
+            font-size:  1.5em;
+        }
+
+        #fotos{
+            margin-top: 5em;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        #cosoflotante input, select{
+            width: 90%;
+        }
+
+        #cosoflotante button{
+            width: 90%;
+            transition: 0.3s;
+        }
+
+        
+        #outfits{
+            grid-column: span 2;
+            height: 100%;
+          
+        }
+
+        #outfits p{
+            margin: 1em;
+        }
+
+        #grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #secgrid .textobanner{
+            display: block;
+        }
+
+        #secgrid article{
+            align-items: flex-start;
+            text-align: justify;   
+        }
+        #debut, #red, #reput{ position: relative;}
+        #secgrid h2{
+            margin-left: 0.5em;
+            text-align: left;
+        }
+
+        .artconimg{
+            font-size: 1em;
+            width: 30%;
+        }
+
+        .eras {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav a{
+            transition: 0.2s;
+        }
+
+        nav a:hover{
+            color: black;
+        }
+
+        #cosoflotante button:hover{
+            background-color: white;
+            color: black;
+        }
+
+       
+        #noticiaoutfits a{
+            transition: 0.2s;
+        }
+
+        #noticiaoutfits a:hover{
+            background-color: black;
+        }
+        
+      .etiqueta {
+        display: block;
+        background-color: var(--naranjita);
+        padding: 0.5em;
+        width: 30%;
+        position: absolute;
+        text-align: left;
+        top: 20px;
+        right: 0px;
+        font-weight: 700;
+        color: white;}
+
+        .artconimg a{
+            transition: 0.2s;
+        }
+
+        .artconimg a:hover{
+            background-color: var(--flotante);
+            color: white;
+        }
+
+      .imgapagada{
+      display: block;
+    }
+
+    #outfitgrid2{
+      grid-column: span 2;
+    }
+    #outfits{
+      grid-column: span 1;
+    }
+    }
